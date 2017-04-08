@@ -35,16 +35,25 @@
 <h2 align="left">Goals and Deliverables</h2>
 <p>
 Goals:
-We want to be able to simulate realistic fluid particles that take into account properties such as incompressibility, vorticity, and viscosity. Incompressible means that the density of water is constant. We use vorticity confinement to add rotational energy to the particles. We also want the particles to have viscosity, or thickness. By the end of the project we should be able to simulate scenes such as opening a floodgate of water, and dropping an object into a container of water. 
+We want to be able to simulate realistic fluid particles that take into account properties such as incompressibility, vorticity, and viscosity. Incompressible means that the density of water is constant. We use vorticity confinement to add rotational energy to the particles. We also want the particles to have viscosity, or thickness. By the end of the project we should be able to simulate scenes such as opening a floodgate of water, and dropping an object into a container of water. We should have side-by-side comparisons of the fluid particles before and after implementing features such as viscosity and vorticity. 
  
 <br> <br>
 
-We also hope to add some more realism to the scene by rendering the particles to look like an actual fluid. If possible, we would like to additionally implement buoyancy physics. Another cool extension would be interactive surface disturbances such as creating ripples in a surface of water.
+We also hope to add some more realism to the scene by rendering the particles to look like an actual fluid with a surface. If possible, we would like to additionally implement buoyancy physics. Another cool extension would be interactive surface disturbances such as creating ripples in a surface of water.
+
+<br><br>
+
+We would like to ultimately implement the algorithm to run on the GPU, so one measurement we can take is the speed difference between running on the CPU and the GPU. In termns of accuracy of our model, the main way to test will likely just be looking at the before/after comparisons. 
 </p>
 
 <h2 align="left">Schedule</h2>
+<p>
+In the first week, we hope to implement a basic simulation of water particles in which the only force acting on them is gravity. By the second week, we would like to have implemented the full model and have some basic simulations in which we can see the effects of vorticity and viscosity. In the third week, we would like to finish our simulations such as an object dropping into water, and the opening of the floodgates. Afterwards, if possible we would like to try to implement the extensions such as rendering the particles to look like actual fluids. 
+</p>
 
 <h2 align="left">Resources</h2>
+<p>
+One major resource will be <a href="http://mmacklin.com/pbf_sig_preprint.pdf">the article</a> by Miles Macklin and Matthias Müller on position based fluids. We will also likely need to review the articles referenced within that paper, as well as other online resources for some of the math. We should be running on Linux computers and with Nvidia GPUs. The code will likely be in C++ with OpenGL and Cuda.
 
 </div>
 </body>
